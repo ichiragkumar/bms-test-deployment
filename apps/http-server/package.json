@@ -1,10 +1,10 @@
 {
-  "name": "ws-server",
+  "name": "http-server",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*",
-    "@repo/db": "workspace:*"
+    "@repo/db": "workspace:*",
+    "@repo/typescript-config": "workspace:*"
   },
   "scripts": {
     "build": "tsc -b",
@@ -16,6 +16,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@types/express": "^5.0.1",
     "apollo-server-express": "^3.13.0",
     "express": "^5.1.0",
     "graphql": "^16.11.0",
