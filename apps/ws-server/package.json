@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*",
-    "@repo/db": "workspace:*"
+    "@repo/db": "workspace:*",
+    "@repo/typescript-config": "workspace:*"
   },
   "scripts": {
     "build": "tsc -b",
@@ -16,9 +16,11 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@types/ws": "^8.18.1",
     "apollo-server-express": "^3.13.0",
     "express": "^5.1.0",
     "graphql": "^16.11.0",
-    "mongoose": "^8.14.2"
+    "mongoose": "^8.14.2",
+    "ws": "^8.18.2"
   }
 }

@@ -9,16 +9,14 @@ app.get("/", (req, res) => {
 
 
 app.post("/signup", async (req, res) => {
-    const username = req.body.username;
+
     const password = req.body.password;
     const email = req.body.email;
     const name = req.body.name;
     const updatedAt = new Date();
-    const passwordHash = password;
+
 
    console.log(
-     "Username: ",
-     username,
      "Password: ",
      password,
      "Email: ",
@@ -26,19 +24,16 @@ app.post("/signup", async (req, res) => {
      "Name: ",
      name,
      "UpdatedAt: ",
-     updatedAt,
-     "PasswordHash: ",
-     passwordHash
+     updatedAt
    );
 
    const user = await client.user.create({
      data: {
-       username,
-       password,
+       updatedAt,
        email,
        name,
-       updatedAt,
-       passwordHash,
+       password,
+
      },
    });
 
