@@ -1,9 +1,10 @@
 {
   "name": "@repo/db",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "exports": {
     "./client": "./src/index.ts"
+
   },
   "keywords": [],
   "devDependencies": {
