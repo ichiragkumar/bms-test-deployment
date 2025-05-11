@@ -18,6 +18,7 @@
   "dependencies": {
     "@types/ws": "^8.18.1",
     "apollo-server-express": "^3.13.0",
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "graphql": "^16.11.0",
     "mongoose": "^8.14.2",

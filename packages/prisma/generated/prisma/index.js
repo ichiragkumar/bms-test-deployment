@@ -132,7 +132,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/Users/ichiragkumar/Desktop/Projects/bms/packages/prisma/generated/prisma",
+      "value": "/Users/ichiragkumar/Desktop/Projects/bms-test-deployment/packages/prisma/generated/prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -146,12 +146,12 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/Users/ichiragkumar/Desktop/Projects/bms/packages/prisma/prisma/schema.prisma",
+    "sourceFilePath": "/Users/ichiragkumar/Desktop/Projects/bms-test-deployment/packages/prisma/prisma/schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
     "rootEnvPath": null,
-    "schemaEnvPath": "../../.env"
+    "schemaEnvPath": "../../prisma/.env"
   },
   "relativePath": "../../prisma",
   "clientVersion": "6.7.0",
@@ -169,8 +169,8 @@ const config = {
       }
     }
   },
-  "inlineSchema": "// This is your Prisma schema file,\n// learn more about it in the docs: https://pris.ly/d/prisma-schema\n\n// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?\n// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init\n\ngenerator client {\n  provider = \"prisma-client-js\"\n  output   = \"../generated/prisma\"\n}\n\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"DATABASE_URL\")\n}\n\nmodel User {\n  id        String   @id @default(cuid())\n  createdAt DateTime @default(now())\n  updatedAt DateTime @updatedAt\n  email     String   @unique\n  name      String?\n  password  String?\n}\n",
-  "inlineSchemaHash": "9faaa292ad161c453abb5419098c30b58cbe15fad8ac6ba418f493da83f89c52",
+  "inlineSchema": "generator client {\n  provider = \"prisma-client-js\"\n  output   = \"../generated/prisma\"\n}\n\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"DATABASE_URL\")\n}\n\nmodel User {\n  id        String   @id @default(cuid())\n  createdAt DateTime @default(now())\n  updatedAt DateTime @updatedAt\n  email     String   @unique\n  name      String?\n  password  String?\n}\n",
+  "inlineSchemaHash": "a4467e4c0e52fd230b3d724a7250f8273a9bf08a08fda64824a5c35257fe2bdc",
   "copyEngine": true
 }
 
